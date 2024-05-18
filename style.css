@@ -30,6 +30,10 @@ height: 7vh;
     box-shadow: 0px 10px 10px 5px #d1d1d1;
 }
 
+.container-header .text-header{
+    display: none;
+}
+
 .nav-list{
     display: flex;
     align-items: center;
@@ -70,6 +74,40 @@ nav a:hover{
     transition: .3s;
 }
 
+.container-sobre{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-sobre{
+    margin-left: 6vh;
+    width: 119vh;
+}
+
+.text-sobre h2{
+    color: #5e5e5e;
+}
+
+.text-sobre p{
+    color: #a7a7a7;
+    text-align: justify;
+}
+
+.img-sobre{
+    background-image: url(img/kiwihug-3gifzboyZk0-unsplash.jpg);
+    height: 50vh;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: -5px 8px 8px 0px #a7a7a7;
+}
+
+.img-sobre img{
+    align-items: center;
+    justify-content: center;
+    margin-top: -45px;
+}
+
 @media (max-width: 999px) {
 
     body{
@@ -100,8 +138,7 @@ nav a:hover{
         color: #fff;
         font-size: 50px;
         bottom: -8px;
-        left: 0px;
-        
+        left: 0px;  
     }
     
     .nav-list li{
@@ -118,6 +155,34 @@ nav a:hover{
         display: block;
     }
 
+    .container-sobre{
+        flex-direction: column;
+    }
+
+    .text-sobre{
+        margin-bottom: 8vh;
+        width: 90vh;
+        margin-left: -9px;
+    }
+
+    .img-sobre{
+        display: none;
+    }
+
+}
+
+@media (max-width: 320px){
+
+    .text-sobre{
+        margin-bottom: 8vh;
+        width: 40vh;
+        margin-left: -9px;
+        font-size: 13px;
+    }
+
+    .img-sobre img{
+        
+    }
 }
 
 @keyframes navLinkFade {
