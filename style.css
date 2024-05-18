@@ -94,6 +94,24 @@ nav a:hover{
     text-align: justify;
 }
 
+.btn-social{
+    margin-top: 10px;
+    font-size: 30px;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+.btn-social i{
+    cursor: pointer;
+    transition: .3s;
+    color: #5e5e5e;
+}
+
+.btn-social i:hover{
+    color: #444444;
+}
+
 .img-sobre{
     background-image: url(img/kiwihug-3gifzboyZk0-unsplash.jpg);
     height: 50vh;
@@ -169,6 +187,10 @@ nav a:hover{
         display: none;
     }
 
+    .btn-social{
+        justify-content: center;
+    }
+
 }
 
 @media (max-width: 320px){
@@ -180,9 +202,8 @@ nav a:hover{
         font-size: 13px;
     }
 
-    .img-sobre img{
-        
-    }
+
+
 }
 
 @keyframes navLinkFade {
