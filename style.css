@@ -87,6 +87,7 @@ nav a:hover{
 
 .text-sobre h2{
     color: #5e5e5e;
+    font-size: 30px;
 }
 
 .text-sobre p{
@@ -125,6 +126,71 @@ nav a:hover{
     justify-content: center;
     margin-top: -45px;
 }
+
+.container-safra{
+    margin-top: 20vh;
+    margin-bottom: 6vh;
+}
+
+.container-safra div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-safra h2{
+    color: #5e5e5e;
+    font-size: 30px;
+}
+
+.img-safra img{
+    height: 100vh;
+    
+}
+
+.container-safra .text-safra{
+    margin-top: -8vh;
+    padding-top: 0;
+    color: #a7a7a7;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.container-safra .text-safra:hover{
+    color: #5e5e5e;
+    transform: scale(1.03);
+}
+
+footer{
+    background-color: #d1d1d1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2vh;
+}
+
+footer span{
+    color: #fff;
+}
+
+footer p{
+    color: #444444;
+}
+
+footer i{
+    cursor: pointer;
+    font-size: 30px;
+    margin: 0 1vh;
+    color: #fff;
+    transition: .3s;
+}
+
+footer i:hover{
+    color: #444444;
+}
+
 
 @media (max-width: 999px) {
 
@@ -191,15 +257,38 @@ nav a:hover{
         justify-content: center;
     }
 
+    .img-safra img{
+        height: 70vh;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 6vh;
+    }
+
+
+
 }
 
 @media (max-width: 320px){
 
     .text-sobre{
+        text-align: center;
         margin-bottom: 8vh;
         width: 40vh;
         margin-left: -9px;
         font-size: 13px;
+    }
+
+    .container-sobre{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .container-safra{
+        margin-top: 0;
+    }
+
+    .img-safra img{
+        height: 30vh;
     }
 
 
